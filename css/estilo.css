@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "parrafo"
+    "footer";
+    text-align: center;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.Parrafo {
+    grid-area: parrafo;
+}
+
+main {
+    grid-area: main;
+}
+
+/*index*/
+
+.nav1 {
+    display: none;
+}
+
+.tituloIndex{
+    position: relative;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 150px;
+    font-weight: bolder;
+    display: none;
+}
+
+.parrafoIndex{
+    display: none;
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
+    text-align: start;
+}
+
+.logo {
+    width: 300px;
+    bottom: 72px;
+    border-radius: 10px;
+}
+
+.parrafoIndex2 {
+    font-family: 'Cormorant SC', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.link {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    border: 2px black solid;
+    background-color: grey;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    display: none;
+}
+
+.padreFlex {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin: 0%;
+}
+
+.Flex {
+    display: flex;
+    height: 190px;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fix {
+    position: relative;
+    }
+    
+.fixed {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 120px;
+    border-radius: 30px;
+ }
+
+ /*estilos de contacto ubicacion*/
+
+ .tituloUbicacion {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 10px;
+    font-family: 'Cormorant SC', cursive;
+}
+
+.mapa {
+    width: 80%;
+}
+
+.indicacionMapa {
+    bottom: 200px;
+    left: 30px;
+    text-align: left;
+}
+
+/*estilos contacto*/
+.subContacto{
+    margin: 10px;
+    font-family: 'Cormorant SC', cursive;
+}
+
+.nombreConsulta {
+    text-transform: uppercase;
+    bottom: 250px;
+    font-size: 17px;
+}
+
+.text1 {
+    bottom: 250px;
+    font-size: 20px;
+}
+
+.apellidoConsulta {
+    text-transform: uppercase;
+    bottom: 240px;
+    font-size: 17px;
+}
+
+.text2 {
+    bottom: 240px;
+    font-size: 20px;
+}
+
+.correoElectronico {
+    text-transform: uppercase;
+    bottom: 230px;
+    font-size: 17px;
+}
+
+.text3 {
+    bottom: 230px;
+    font-size: 20px;
+    width: 300px;
+}
+
+.motivoConsulta {
+    text-transform: uppercase;
+    bottom: 220px;
+    font-size: 17px;
+}
+
+.text4 {
+    bottom: 220px;
+    width: 500px;
+    font-size: 17px;
+}
+
+.botonSubmit {
+    text-transform: uppercase;
+    bottom: 210px;
+    font-size: 17px;
+}
+
+.botonReset {
+    text-transform: uppercase;
+    bottom: 210px;
+    font-size: 17px;
+}
+
+/*mediaqueries*/
+
+
+@media screen and (min-width:1024px){
+
+    header {
+        border: 1px black solid;
+        background-color: red;
+        margin: 0;
+        padding: 0;
+        height: 263px;
+    }
+
+    .logo {
+        width: 300px;
+        bottom: 72px;
+        margin-right: 1100px;
+        border-radius: 10px;
+    }
+
+    .nav1 {
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    padding: 10px;
+    bottom: 300px;
+    left: 150px;
+    }
+
+    .nav2 {
+        display: none;
+    }
+
+    .tituloIndex {
+        display: none;
+        position: relative;
+        left: 150px;
+        bottom: 340px;
+        font-family: 'Calligraffitti', cursive;
+        font-size: 80px;
+        font-weight: bolder;
+        display: block;
+    }
+
+    .parrafoIndex{
+        display: block;
+        position: relative;
+        font-family: 'Cormorant SC', cursive;
+        font-size: 22px;
+        text-align: center;
+        bottom: 85px;
+    }
+    .prologoIndex {
+        position: relative;
+        margin-left: 300px;
+        bottom: 270px;
+    }
+
+    .parrafoIndex2{
+        display: none;
+    }
+
+    .subtituloIndex {
+      display: inline;
+      position: relative;
+      font-size: 50px;
+      text-align: center;
+      font-family: 'Cormorant SC', cursive;
+      bottom: 10px;
+    }
+
+    .padreFlex {
+       display: inline-block;
+    }
+
+    .weRem {
+        position: relative;
+        width: 450px;
+        height: 550px;
+        left: 150px;
+    }
+    
+    .cuerdos {
+        position: relative;
+        width: 450px;
+        height: 550px;
+        left: 150px;
+    }
+    
+    .zimith {
+        position: relative;
+        width: 450px;
+        height: 500px;
+        left: 150px;
+    }
+    
+    .weBuzos {
+        position: relative;
+        background-size: cover;
+        width: 763px;
+        height: 550px;
+    }
+    
+    .regular {
+        position: relative;
+        width: 500px;
+        height: 452px;
+        left: 150px;
+    }
+    
+    .momFit {
+        position: relative;
+        width: 500px;
+        height: 452px;
+        left: 150px;
+    }
+
+    .text4 {
+        size: 100px;
+        width: 350px;
+        height: 150px;
+    }
+
+    .subContacto {
+        text-decoration: underline;
+        margin: 30px;
+        padding: 30px;
+    }
+    
+    form {
+        border: 5px solid black;
+        margin: 30px;
+        padding: 30px;
+    }
+
+
+
+}
